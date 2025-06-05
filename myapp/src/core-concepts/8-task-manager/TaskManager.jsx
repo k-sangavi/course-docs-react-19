@@ -21,11 +21,17 @@ export default function TaskManager() {
     /* this is terranary operator 
      condition ? exprlfTrue: exprlfFalse*/
   };
+  const deleteTask = (id) => {
+    const filteredTasks = tasks.filter((task) => {
+      task["id"] !== id;
+    });
+    setTasks(filteredTasks)
+  };
   return (
     <div>
       <h1>Task Manager</h1>
       <TaskForm addTask={addTask} />
-      <TaskList tasks={tasks} toggleTask={toggleTask}/>
+      <TaskList tasks={tasks} toggleTask={toggleTask} deleteTask={deleteTask} />
       <p>Tasks: {tasks.length}</p>
     </div>
   );

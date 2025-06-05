@@ -9,6 +9,9 @@ import EventHandlingEx from "./core-concepts/6-eventhandling/EventHandlingEx";
 import SimpleForm from "./core-concepts/6-eventhandling/SimpleForm";
 import ListEx from "./core-concepts/7-list&keys/ListEx";
 import TaskManager from "./core-concepts/8-task-manager/TaskManager";
+import UseStateExample from "./hook/t-1-usestate/useStateExample";
+import UseReducerExample from "./hook/t-2-useReducer/UseReducerExample";
+import UseActionState from "./hook/t-3-useactionstate/useActionState";
 
 function App() {
   // return <HelloWorld />;
@@ -21,7 +24,10 @@ function App() {
   // return <EventHandlingEx />
   // return <SimpleForm />
   //   return <ListEx />
-  return <TaskManager />;
+  // return <TaskManager />;
+  // return <UseStateExample />;
+  // return <UseReducerExample />;
+  return <UseActionState />
 }
-// }
+
 export default App;
